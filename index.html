@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #outer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #outer h2{
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+    }
+    #inner{
+      background-color: white;
+      border-radius: 20px;
+      text-align: center;
+    }
+    #inner div{
+      width: 450px;
+    }
+    #sub-text{
+      margin: 0 50px;
+      color: hsl(224, 23%, 55%);
+      font-size: 16px;
+      font-weight: 500;
+    }
+    #cancel{
+      color: hsl(224, 23%, 55%);
+      margin: 40px;
+      font-weight: 900;
+    }
+    #cancel:hover{
+      color: hsl(223, 47%, 23%);
+      cursor: pointer;
+    }
+    #plan-box{
+      margin-top: 1.5rem;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 10px;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      width: 80%;
+      margin-left: 10%;
+    }
+    body { 
+      background-image: url("images/pattern-background-desktop.svg"); 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      font-family: 'Red Hat Display', sans-serif;
+      background-color: hsl(225, 100%, 94%);
+      margin: 0;
+      background-position: 50% -35rem;
+    }
+    #payment-button{
+      background-color:  hsl(245, 75%, 52%);
+      color: white;
+      border-radius: 10px;
+      width: 80%;
+      border: none;
+      padding: 15px;
+      font-size: 14px;
+      font-family: 'Red Hat Display', sans-serif;
+      box-shadow: 0 2px 10px hsl(245, 75%, 52%);
+      font-weight: 700;
+    }
+    #payment-button:hover{
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    #change:hover{
+      text-decoration: none;
+      opacity: 0.7;
+    }
+    #change{
+      color: hsl(245, 75%, 52%);
+      font-weight: 700;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="outer">
+    <div id="inner">
+    <img style="border-radius: 20px 20px 0 0;" alt="Animated girl with her headphones" src="images/illustration-hero.svg">
+    <div>
+    <h2>Order summary</h2>
+    <p id="sub-text">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    <span id="plan-box">
+      <img style="margin-left: 20px;" alt="note's icon" src="images/icon-music.svg">
+      <div style="margin-left:-5rem;">
+      <p style="color: hsl(223, 47%, 23%);font-weight: 900;margin-bottom: -0.7rem;">Annual Plan</p>
+      <p style="color: hsl(224, 23%, 55%);font-weight: 500;">$59.99/year</p>
+      </div>
+      <a id="change" href="">Change</a>
+    </span>
+    <br/>
+    <button id="payment-button">Proceed to Payment</button>
+    <p id="cancel">Cancel order</p>
+    </div>
+    </div>
+  </div>
+<br/><br/><br/>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AistisK22">AistisK22</a>.
+  </div>
+</body>
+</html>
